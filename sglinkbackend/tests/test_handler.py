@@ -2,6 +2,7 @@ import os
 import re
 import json
 from unittest import mock
+from function import app
 
 with open('sglinkbackend/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
