@@ -6,14 +6,14 @@ jobs:
     timeout-minutes: 2
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4.5
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.8'
           cache: pip
       - name: Install dependencies
         run: |
-          cd resume/sglinkbackend/tests
           python -m pip install --upgrade pip
+          cd resume/sglinkbackend/tests
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run tests with pytest
         env:
