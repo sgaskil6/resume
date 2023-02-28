@@ -3,7 +3,7 @@ import re
 import json
 from unittest import mock
 
-from sglink import app
+from function import app
 
 with open('resume/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
