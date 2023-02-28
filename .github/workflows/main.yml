@@ -12,7 +12,6 @@ jobs:
       - name: Install dependencies
         run: |
           cd resume/sglinkbackend/tests
-          python -m pip install --upgrade pip
       - name: Run tests with pytest
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
