@@ -12,7 +12,8 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          cd resume/sglinkbackend/tests
+          python -m pip install
       - name: Run tests with pytest
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
