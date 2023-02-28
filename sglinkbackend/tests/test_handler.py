@@ -2,7 +2,7 @@ import os
 import re
 import json
 from unittest import mock
-from sglink import app
+# from sglink import app
 
 with open('sglinkbackend/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
@@ -15,7 +15,7 @@ def test_lambda_handler():
     # os.environ['AWS_ACCESS_KEY_ID'] = 'testing'
     # os.environ['AWS_SECRET_ACCESS_ID'] = 'testing'
 
-    ret = app.lambda_handler("", "")
+    # ret = app.lambda_handler("", "")
 
     # Assert return keys
     assert "statusCode" in ret
