@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/* Font and font sizes */
+.html, .body, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Monoton', sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 400px;
+    margin: 10px 0;
+}
+
+.h2 {
+    font-size: 30px;
+}
+
+.h5 {
+    font-size: 18px;
+}
+
+.h6 {
+    font-size: 16px;
+}
+
+.opacity {
+    opacity: 0.60;
+}
+
+body {
+    margin: 0;
+}
+
+.header nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+    background-color: #333;
+    overflow: hidden; 
+}
+
+/* Style the links inside the navigation bar */
+.header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+/* Change the color of links on hover */
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+/* Add a color to the active/current link */
+.header a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 3rem;
+    font-family: sans-serif;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, black, slateblue);
+    flex-direction: column;
+}
+
+.content p {
+    color: white;
+    font-family: sans-serif;
+    width: 70%;
+    text-align: center;
+}
+
+.content h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+@keyframes fadein {
+    from {transform:scale(1.1);opacity: 0;}
+    to {transform:scale(1);opacity: 1;}
+}
+
+/* Main page style */
+.html {
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Main page style */
+.body-main {
+    color: #000 !important;
+    background: linear-gradient(45deg, black, slateblue);
+    margin: 0;
+    box-sizing: border-box;
+    line-height:1.5;
+}
+
+/* Page container */
+.content-old{
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+}
+
+/* Grid */
+.row-padding {
+    padding: 0 8px;
+    box-sizing: inherit;
+}
+
+/* Top margin */
+.margin-top {
+    margin-top:16px !important;
+}
+
+/* Bottom margin */
+.margin-bottom {
+    margin-bottom: 16px !important;
+}
+
+/* Right margin */
+
+.margin-right {
+    margin-right: 16px !important;
+}
+
+/* Left column */
+.left-side{
+    width: 33.33333%;
+    float: left;
+    padding: 0 8px;
+    box-sizing: inherit;
+}
+
+.background-every{
+    background: linear-gradient(45deg, black, slateblue);
+}
+
+/* Right column */
+.right-side{
+    width: 66.66666%;
+    float: left;
+    padding: 0 8px;
+    box-sizing: inherit;
+}
+
+/* Footer */
+.footer-main {
+    text-align: center !important;
+    background-color: #fff !important;
+    display: block;
+}
+
+/* Holds text and helps separate left/right columns */
+.container {
+    padding-top: 0.01em;
+    padding-right: 16px;
+    padding-bottom: 0.01em;
+    padding-left: 16px;
+}
+
+.display-container {
+    position: relative;
+}
+
+.display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Holds profile picture */
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.card-2 {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Text sizes */
+.xxlarge {
+    font-size: 30px !important;
+}
+
+.large {
+    font-size: 18px !important;
+}
+
+.small {
+    font-size: 12px !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.round-xlarge {
+    border-radius: 16px;
+}
+
+/* Colors - text and background */
+.white {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.teal {
+    color: #fff !important;
+    background-color: #009688 !important;
+}
+
+.peach {
+    color: #fff !important;
+    background-color: #ffb99c !important;
+}
+
+.easter-yellow {
+    color: #fff !important;
+    background-color: #fff49c !important;
+}
+
+.sky-blue {
+    color: #fff !important;
+    background-color: #eaf7fe !important;
+}
+
+.light-purple {
+    color: #fff !important;
+    background-color: #bc7dc5 !important;
+}
+
+.blue-grey {
+    color: #fff !important;
+    background-color: #9fa9d3 !important;
+}
+
+.green-grey {
+    color: #fff !important;
+    background-color: #9fa9a5 !important;
+}
+
+.coral {
+    color: #fff !important;
+    background-color: #ff4367 !important;
+}
+
+.text-purple {
+    color: #bc7dc5 !important;
+}
+
+.text-grey {
+    color: #757575 !important;
+}
+
+.text-teal {
+    color: #009688 !important;
+}
+
+.text-blue {
+    color: #9fa9d3 !important;
+}
+
+.text-white {
+    color: #000 !important;
+}
+
+/* Font Awesome styling and formatting */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+.fa-fw {
+    width: 1.20571429em;
+    text-align: center;
+}
+
+.tag {
+
+}
+
+.round {
+
+}
+
+.visit {
+    font-size: 12px;
+    color: #009688 !important; 
+    display: block;
+}
+
+.padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important; /* # Might take OUT */
+}
+
+/* Website counter placement and styling */
+.website-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #ff4957;
+    height: 50px;
+    width: 80px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+}

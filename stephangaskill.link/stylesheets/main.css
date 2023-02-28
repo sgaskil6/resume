@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@keyframes fadein {
+    from {transform:scale(1.1);opacity: 0;}
+    to {transform:scale(1);opacity: 1;}
+}
+
+/* Header */
+
+.headernav  {
+    position: fixed;
+    width: 200%;
+    display: static;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10rem;
+}
+
+/* Style the links inside the navigation bar */
+.headernav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 32px;
+  }
+
+/* Change the color of links on hover */
+.headernav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+/* Add a color to the active/current link */
+.headernav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Main Page Style */
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, black, slateblue);
+    flex-direction: column;
+}
+
+.content p {
+    color: white;
+    font-family: sans-serif;
+    width: 70%;
+    text-align: center;
+}
+
+.content h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+.visitors {
+    display: inline-block;
+    margin: 15px 0 0 0;
+}
+
+#visits {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    border: 5px solid #fff;
+    border-top: 5px solid #fff;
+    width: 30px !important;
+    min-width: 30px !important;
+    height: 20px !important;
+}
+
+.loader {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 17px;
+    height: 19px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+}
