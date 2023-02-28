@@ -11,7 +11,7 @@ jobs:
           python-version: 3.8
       - name: Install dependencies
         run: |
-          cd /resume/sglinkbackend/tests/
+          cd resume/sglinkbackend/tests
           python -m pip install --upgrade pip
       - name: Run tests with pytest
         env:
