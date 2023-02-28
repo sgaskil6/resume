@@ -5,7 +5,7 @@ from unittest import mock
 
 from sglink import app
 
-with open('sglinkbackend/template.yaml', 'r') as f:
+with open('resume/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
 
 @mock.patch.dict(os.environ, {"TABLENAME": TABLENAME})
