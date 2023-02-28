@@ -10,11 +10,11 @@ with open('sglinkbackend/template.yaml', 'r') as f:
 @mock.patch.dict(os.environ, {"TABLENAME": TABLENAME})
 def test_lambda_handler():
     # Check AWS creds
-    # assert "AWS_ACCESS_KEY_ID" in os.environ
-    # assert "AWS_SECRET_ACCESS_KEY" in os.environ
-    os.environ['AWS_ACCESS_KEY_ID'] = 'testing'
-    os.environ['AWS_SECRET_ACCESS_ID'] = 'testing'
-    
+    assert "AWS_ACCESS_KEY_ID" in os.environ
+    assert "AWS_SECRET_ACCESS_KEY" in os.environ
+    # os.environ['AWS_ACCESS_KEY_ID'] = 'testing'
+    # os.environ['AWS_SECRET_ACCESS_ID'] = 'testing'
+
     ret = app.lambda_handler("", "")
 
     # Assert return keys
