@@ -10,18 +10,21 @@ from unittest import mock
 # sys.path.append("/home/steph/practice/python/modules/sglink")
 # sys.path.append("/home/steph/practice/python/modules2/sgtest")
 
-import sgtest.sgsun 
+# import sgtest.sgsun 
+# import sgsun 
 
 # import app 
 # import trying 
 # import sglink
- # import sgtest 
+# import sgtest 
+
+from ..sglink import app
 
 
 # from app import handler
 # from import app
 
-with open('resume/sglinkbackend/template.yaml', 'r') as f:
+with open('resume/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
 
 @mock.patch.dict(os.environ, {"TABLENAME": TABLENAME})
