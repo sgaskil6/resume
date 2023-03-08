@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import boto3
 
 from unittest import mock
 
@@ -32,7 +33,7 @@ def test_lambda_handler():
     # Check AWS creds
     assert "AWS_ACCESS_KEY_ID" in os.environ
     assert "AWS_SECRET_ACCESS_KEY" in os.environ
-    AWS_DEFAULT_REGION = 'us-east-1'
+    assert "AWS_DEFAULT_REGION" in os.environ
     # os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
     # os.environ['AWS_ACCESS_KEY_ID'] = 'testing'
     # os.environ['AWS_SECRET_ACCESS_ID'] = 'testing'
