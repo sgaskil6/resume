@@ -1,7 +1,6 @@
 import os
 import re
 import json
-import boto3
 
 from unittest import mock
 
@@ -25,7 +24,7 @@ from ..sglink import app
 # from app import handler
 # from import app
 
-with open('resume/template.yaml', 'r') as f:
+with open('sglinkbackend/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
 
 @mock.patch.dict(os.environ, {"TABLENAME": TABLENAME})
