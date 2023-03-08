@@ -28,5 +28,5 @@ def handler(event, context):
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': '*'
         },
-        'body': visit_count
+        'body': json.dumps({'visit_count': visit_count})
     }
