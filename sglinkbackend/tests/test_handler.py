@@ -1,10 +1,27 @@
 import os
 import re
 import json
-from unittest import mock
-from sglink import lambda_handler
 
-with open('sglinkbackend/template.yaml', 'r') as f:
+from unittest import mock
+
+# from .. import app 
+# from ..sglink import app
+# import sys
+# sys.path.append("/home/steph/practice/python/modules/sglink")
+# sys.path.append("/home/steph/practice/python/modules2/sgtest")
+
+import sgtest.sgsun 
+
+# import app 
+# import trying 
+# import sglink
+ # import sgtest 
+
+
+# from app import handler
+# from import app
+
+with open('~/sglinkbackend/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
 
 @mock.patch.dict(os.environ, {"TABLENAME": TABLENAME})
@@ -35,38 +52,3 @@ def test_lambda_handler():
         assert json.loads(ret["body"])["visit_count"] == -1
 
     return
-
-    import json
-import boto3
-
-dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('visitCounter')
-
-def lambda_handler(event, context):
-    response = table.get_item(
-        Key = {
-            'visits': 'visitorNumber'
-        }
-    )
-
-    visit_count = response['Item']['counter']
-    visit_count = str(int(visit_count) +1)
-
-    response = table.put_item(
-        Item = {
-            'visits':'visitorNumber',
-            'counter': visit_count
-        }
-    )
-
-    return {
-        "statusCode": 200,
-        'headers': {
-            'Access-Control-Allow-Headers': '*',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': '*'
-        },
-        'body': visit_count
-    }
-
-
