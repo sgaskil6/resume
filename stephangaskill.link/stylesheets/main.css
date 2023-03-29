@@ -5,6 +5,32 @@
     to {transform:scale(1);opacity: 1;}
 }
 
+/* Main Page Style */
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, black, slateblue);
+    flex-direction: column;
+}
+
+.content p {
+    color: white;
+    font-family: sans-serif;
+    width: 70%;
+    text-align: center;
+}
+
+.content h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
 /* Header */
 
 .headernav  {
@@ -38,30 +64,37 @@
     color: white;
 }
 
-/* Main Page Style */
-.content {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+/* Music Playlist Page Styling */
+
+.playlistnav  {
+    position: fixed;
+    width: 200%;
+    display: static;
+    justify-content: flex-end;
     align-items: center;
-    background: linear-gradient(45deg, black, slateblue);
-    flex-direction: column;
+    height: 10rem;
 }
 
-.content p {
-    color: white;
-    font-family: sans-serif;
-    width: 70%;
+/* Style the links inside the navigation bar */
+.playlistnav a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
-}
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 32px;
+  }
 
-.content h1 {
+/* Change the color of links on hover */
+.playlist a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+/* Add a color to the active/current link */
+.playlist a.active {
+    background-color: #04AA6D;
     color: white;
-    font-size: 3rem;
-    font-family: 'Monoton', cursive;
-    font-weight: 400;
-    animation-name: fadein;
-    animation-duration: 3s;
 }
 
 .visitors {

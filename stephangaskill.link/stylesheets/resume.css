@@ -48,22 +48,23 @@
     animation-duration: 3s;
 }
 
-/* Resume main page style */
+/* Website main page style */
 .body-main {
-    color: #000 !important;
-    background: linear-gradient(45deg, black, rgb(168, 158, 212));
+    color: #fff !important;
+    background: linear-gradient(45deg, black, rgb(170, 157, 226));
     margin: 0;
     box-sizing: border-box;
     line-height:1.5;
 }
 
-/* Left column 
-.left-side{
-    width: 33.33333%;
-    float: left;
-    padding: 0 8px;
-    box-sizing: inherit;
-} */
+/* Resume main page style */
+.body-resume {
+    color: #fff !important;
+    background: linear-gradient(45deg, black, rgb(3, 0, 14)); */
+    margin: 0;
+    box-sizing: border-box;
+    line-height:1.5;
+}
 
 /* Left Siiiiiddeeee */
 .left-side {
@@ -91,6 +92,10 @@
 
 .background-every{
     background: linear-gradient(45deg, black, rgb(90, 205, 161));
+}
+
+.background-resume{
+    background: #000;
 }
 
 /* Holds profile picture */
